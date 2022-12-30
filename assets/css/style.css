@@ -436,6 +436,7 @@ section:not(.section-top){
 
 .services__types-item{
     padding: 12px 0px;
+    max-width: 100%;
     width: 100%;
     text-align: center;
     font-family: 'Montserrat Medium';
@@ -466,6 +467,211 @@ section:not(.section-top){
     margin-top: 50px;
 }
 
+.services__list-item-name{
+    font-family: 'Montserrat SemiBold';
+    font-size: 17px;
+    line-height: 21px;
+    color: #041726;
+    margin-top: 25px;
+}
+
+.services__list-item-price{
+    margin-top: 15px;
+    font-family: 'Montserrat SemiBold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #63B32E;
+}
+
+.services__list-item-details-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat SemiBold';
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: 220px;
+    height: 55px;
+    background: #63B32E;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.services__list-item{
+    width: 280px;
+    padding: 20px 15px 40px 15px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.services__list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: 80px;
+}
+
+.advantages__list-item{
+    max-width: 370px;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #EFEFEF;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -35px;
+    margin-top: 65px;
+    justify-content: center;
+}
+
+.advantages__list-item-descr{
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    line-height: 20px;
+    color: #041726;
+    padding: 30px 18px 50px 18px;
+}
+
+.advantages__list-item-img{
+    max-width: 100%;
+}
+
+.section-call{
+    background: url('../images/call-bg.png');
+    background-size: cover;
+}
+
+.section-call-title{
+    font-family: 'Montserrat SemiBold';
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.section-call-descr{
+    font-family: 'Montserrat SemiBold';
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.section-call-button{
+    width: 260px;
+    height: 55px;
+    background: #63B32E;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 45px;
+    font-family: 'Montserrat SemiBold';
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.section-call{
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.sails__list-item{
+    width: 280px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.sails__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: 65px;
+}
+
+.sails__list-item-name{
+    font-family: 'Montserrat SemiBold';
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #041726;
+    margin-top: 25px;
+}
+
+.section-sails{
+    background: #EFEFEF;
+}
+
+.questions__list-item__main{
+    background: #63B32E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+.questions__list-item-name{
+    font-family: 'Montserrat Medium';
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.questions__list{
+    margin-top: 65px;
+}
+
+.questions__list-item:not(:first-child){
+    margin-top: 5px;
+}
+
+.questions__list-item-button{
+    transform: rotateZ(45deg);
+    transition: 0.4s;
+}
+
+.questions__list-item-answer{
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    line-height: 20px;
+    color: #041726;
+    min-height: 64px;
+    padding: 12px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    transition: 0.4s;
+    display: none;
+}
+
+.questions__list-item.active .questions__list-item-button{
+    transform: rotateZ(0deg);
+}
+
+.questions__list-item.active .questions__list-item-answer{
+    height: 100%;
+    display: flex;
+}
+
+.section-questions{
+    background: #EFEFEF;
+}
+
 @media(max-width: 1000px){
     .header__contacts{
         flex-direction: column;
@@ -487,9 +693,34 @@ section:not(.section-top){
     }
 }
 
+@media(max-width: 899px){
+    .services__list{
+        justify-content: center;
+    }
+}
+
 @media(max-width: 700px){
     .header__contacts, .telephone, .actions__list, .header__bottom{
         display: none;
+    }
+
+    .services__types-item{
+        font-size: 17px;
+        padding: 4px 0px;
+    }
+
+    .section-call-title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .section-call-descr{
+        font-size: 13px;
+    }
+
+    .section-call{
+        padding: 50px 0px;
+        background-position: center;
     }
 
     .menu-btn{
