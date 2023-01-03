@@ -320,10 +320,6 @@ h1{
     z-index: 60;
 }
 
-.menu__responsive.active{
-    top: 80px;
-}
-
 .menu__responsive .header__bottom-nav__list{
     flex-direction: column;
     justify-content: start;
@@ -672,6 +668,56 @@ section:not(.section-top){
     background: #EFEFEF;
 }
 
+.footer{
+    background: #333333;
+    padding: 48px 0px;
+}
+
+.footer-item-title{
+    font-family: 'Montserrat SemiBold';
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.footer-item-link{
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer-item__list-item:not(:first-child){
+    margin-top: 10px;
+}
+
+.footer-item__list{
+    margin-top: 35px;
+}
+
+.footer__content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -180px;
+    margin-top: -20px;
+}
+
+.footer-item{
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+.footer__info{
+    margin-top: 80px;
+    padding-top: 25px;
+    font-family: 'Montserrat Medium';
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border-top: 2px solid #434343;
+}
+
 @media(max-width: 1000px){
     .header__contacts{
         flex-direction: column;
@@ -702,6 +748,10 @@ section:not(.section-top){
 @media(max-width: 700px){
     .header__contacts, .telephone, .actions__list, .header__bottom{
         display: none;
+    }
+
+    .menu__responsive.active{
+        top: 80px;
     }
 
     .services__types-item{
